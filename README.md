@@ -10,24 +10,22 @@
 
 ## 🛠 技术栈
 
-- 后端：Spring Boot + Spring Data JPA + MySQL
-- 前端：Vue3 + Element Plus
-- 工具：Maven + Git
+**后端**
+- Spring Boot
+- Spring Data JPA
+- MySQL
+- Redis
+
+**前端**
+- Vue3
+- Element Plus
+- Axios
+
 
 ## 📁 项目结构
 ```
-├── src/main/java/com/example/homestay/
-│ ├── controller/ # 控制器层，接收请求
-│ ├── dto/ # 数据传输对象
-│ ├── entity/ # 数据实体类
-│ ├── repository/ # 数据访问层
-│ └── service/ # 业务逻辑层
-├── src/main/resources/
-│ └── application.yml # 配置文件
-└── pom.xml
-
 homestay-booking-system/
-├── backend/                              # 后端代码（Spring Boot）
+├── backend/                              # 后端代码
 │   ├── src/main/java/com/example/homestay/
 │       ├── controller/                   # 控制器层，接收请求
 │       ├── dto/                          # 数据传输对象
@@ -38,7 +36,7 @@ homestay-booking-system/
 │       └── application.yml               # 配置文件
 │   ├── pom.xml
 │   └── ...
-├── frontend/                             # 前端代码（Vue3）
+├── frontend/                             # 前端代码
 │   ├── public/                           # 公共静态资源
 │   │   └── images/                       # 图片资源
 │   │       ├── detail/                   # 详情页图片
@@ -61,11 +59,30 @@ homestay-booking-system/
 
 ## 🚀 快速启动
 
+### 后端（Spring Boot）
+
 1. 创建 MySQL 数据库，执行相关 SQL 脚本
 2. 修改 `application.yml` 中的数据库连接信息
 3. 运行 `HomestayApplication.java`
 4. 访问 `http://localhost:8080`
 
+### 前端（Vue3）
+
+1. 进入前端目录：
+   ```bash
+   cd homestay-booking-frontend
+   ```
+2. 安装依赖：
+   ```bash
+   npm install
+   ```
+3. 启动开发服务器：
+   ```bash
+   npm run dev
+   ```
+4. 浏览器访问 `http://localhost:5173`
+
+   
 ## 📸 项目截图
 
 ### 首页
