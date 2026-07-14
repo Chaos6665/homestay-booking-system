@@ -1,0 +1,45 @@
+### 用户注册
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "123456",
+  "phone": "13800000001",
+  "nickname": "用户一号"
+}
+
+
+### 用户登录
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "123456"
+}
+
+
+
+### 商家注册
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+"username": "merchant1",
+"password": "123456",
+"phone": "13800000002",
+"nickname": "商家一号"
+}
+
+
+### 管理员注册
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "admin1",
+  "password": "123456",
+  "phone": "13800000003",
+  "nickname": "管理员一号"
+}

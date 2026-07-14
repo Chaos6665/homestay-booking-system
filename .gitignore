@@ -1,0 +1,10 @@
+# Compiled output
+target/
+*.class
+.idea/
+*.iml
+.vscode/
+node_modules/
+dist/
+.DS_Store
+*.log
