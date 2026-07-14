@@ -15,8 +15,7 @@
 - 工具：Maven + Git
 
 ## 📁 项目结构
-
-homestay-booking-backend/
+```
 ├── src/main/java/com/example/homestay/
 │ ├── controller/ # 控制器层，接收请求
 │ ├── dto/ # 数据传输对象
@@ -27,6 +26,38 @@ homestay-booking-backend/
 │ └── application.yml # 配置文件
 └── pom.xml
 
+homestay-booking-system/
+├── backend/                              # 后端代码（Spring Boot）
+│   ├── src/main/java/com/example/homestay/
+│       ├── controller/                   # 控制器层，接收请求
+│       ├── dto/                          # 数据传输对象
+│       ├── entity/                       # 数据实体类
+│       ├── repository/                   # 数据访问层
+│       └── service/                      # 业务逻辑层
+│    ├── src/main/resources/
+│       └── application.yml               # 配置文件
+│   ├── pom.xml
+│   └── ...
+├── frontend/                             # 前端代码（Vue3）
+│   ├── public/                           # 公共静态资源
+│   │   └── images/                       # 图片资源
+│   │       ├── detail/                   # 详情页图片
+│   │       ├── hotel/                    # 酒店/民宿相关图片
+│   │       └── logo/                     # Logo图片
+│   ├── src/                              # 源代码目录
+│   │   ├── api/                          # API接口封装
+│   │   ├── components/                   # 可复用组件
+│   │   ├── router/                       # 路由配置
+│   │   ├── views/                        # 页面视图组件
+│   │   ├── App.vue                       # 根组件
+│   │   └── main.js                       # 入口文件
+│   ├── index.html                        # HTML模板
+│   ├── package.json                      # 项目依赖配置
+│   ├── package-lock.json                 # 依赖版本锁定
+│   └── vite.config.js                    # Vite构建配置
+├── screenshots/                          # 项目截图
+└── README.md                             # 项目说明
+```
 
 ## 🚀 快速启动
 
